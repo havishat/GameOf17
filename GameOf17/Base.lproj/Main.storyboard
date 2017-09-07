@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameOf17" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sumLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-j1-gyd">
+                                <rect key="frame" x="52" y="28" width="271" height="308"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="308" id="szi-rE-2pY"/>
+                                    <constraint firstAttribute="width" constant="271" id="xg9-37-seD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NVM-pG-ibd">
+                                <rect key="frame" x="16" y="447" width="343" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-ny-oU6">
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Dq-jl-iLd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouf-uO-iAH">
+                                        <rect key="frame" x="115.5" y="0.0" width="112" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qX-zk-Vbh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faz-jp-WQj">
+                                        <rect key="frame" x="230.5" y="0.0" width="112.5" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PeZ-PB-cSx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sEc-t8-iZn"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y79-jr-lBQ">
+                                <rect key="frame" x="167.5" y="409" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWO-KX-MYC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOt-Qv-3UO">
+                                <rect key="frame" x="167" y="28" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-hv-zX2">
+                                <rect key="frame" x="138" y="371" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WPr-ww-qar"/>
+                                </constraints>
+                                <state key="normal" title="Leaderboard"/>
+                                <connections>
+                                    <action selector="showLeaderboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8W-e2-lvG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IWh-j1-gyd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DPo-Mm-W7r"/>
+                            <constraint firstItem="ZOt-Qv-3UO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRO-Gg-Rx9"/>
+                            <constraint firstItem="NVM-pG-ibd" firstAttribute="top" secondItem="y79-jr-lBQ" secondAttribute="bottom" constant="8" id="KQ2-CK-0CP"/>
+                            <constraint firstItem="y79-jr-lBQ" firstAttribute="top" secondItem="Mv2-hv-zX2" secondAttribute="bottom" constant="8" id="UTa-eJ-uYP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NVM-pG-ibd" secondAttribute="trailing" id="VFF-qc-l76"/>
+                            <constraint firstItem="ZOt-Qv-3UO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="W5l-Aq-Fps"/>
+                            <constraint firstItem="NVM-pG-ibd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cOz-SO-bAf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NVM-pG-ibd" secondAttribute="bottom" constant="20" id="gs8-xg-bsh"/>
+                            <constraint firstItem="Mv2-hv-zX2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wrG-Oj-lys"/>
+                            <constraint firstItem="y79-jr-lBQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xYh-b7-kf4"/>
+                            <constraint firstItem="IWh-j1-gyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yCw-J9-MpG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="n2e-ny-oU6" id="6Fb-OT-RHV"/>
+                        <outlet property="button2" destination="Ouf-uO-iAH" id="oMG-xu-ZW3"/>
+                        <outlet property="button3" destination="faz-jp-WQj" id="joZ-Tn-B6d"/>
+                        <outlet property="cardCounter" destination="ZOt-Qv-3UO" id="zGN-6p-KWb"/>
+                        <outlet property="leaderboardButton" destination="Mv2-hv-zX2" id="VxR-mA-EM6"/>
+                        <outlet property="resetButton" destination="y79-jr-lBQ" id="nEu-DH-vxm"/>
+                        <outlet property="sumLabel" destination="IWh-j1-gyd" id="vZ0-hk-OkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
